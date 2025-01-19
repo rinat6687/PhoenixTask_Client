@@ -18,6 +18,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 20%;
+  position: relative;
 }
 
 .popup-content h1 {
@@ -63,28 +64,28 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  cursor: pointer;
-  line-height: 1;
-}
-
-.close-button:hover {
-  color: #ff0000;
-}
-
 .error-text {
   color: red;
   font-size: 12px;
   margin-top: 5px;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
 }
 
 

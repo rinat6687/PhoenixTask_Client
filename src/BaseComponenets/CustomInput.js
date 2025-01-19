@@ -1,7 +1,7 @@
 import React from "react";
 import "./CustomInput.css";
 
-const CustomInput = ({ label, name, value, onChange, type = "text" }) => {
+const CustomInput = ({ label, name, value, onChange, type = "text" , disabled}) => {
   return (
     <div className="input-container">
       <label htmlFor={name}>{label}</label>
@@ -11,6 +11,7 @@ const CustomInput = ({ label, name, value, onChange, type = "text" }) => {
         name={name}
         value={value}
         onChange={onChange}
+        disabled={disabled}
       />
     </div>
   );

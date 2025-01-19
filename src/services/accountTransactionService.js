@@ -33,3 +33,13 @@ export const deleteTransaction = async (transactionId) => {
     throw error;
   }
 };
+
+export const updateTransaction = async (transactionRequest) => {
+  try {
+    const response = await axios.post(`${API_BASE_URL}/update`, transactionRequest);
+    return response.data;
+  } catch (error) {
+    console.error('Error inserting transaction:', error);
+    throw error;
+  }
+};
